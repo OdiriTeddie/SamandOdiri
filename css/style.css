@@ -26,7 +26,7 @@ img {
   top: 0;
   width: 100%;
   background: #be3144;
-
+  padding-block: 1rem;
   padding-inline: 3rem;
 }
 
@@ -85,7 +85,8 @@ img {
 .cards-list {
   display: grid;
   gap: 2rem;
-  grid-template-columns: 1fr;
+
+  grid-template-columns: repeat(3, 1fr);
   max-width: 70rem;
   width: 90%;
   margin-inline: auto;
@@ -156,15 +157,21 @@ footer {
   color: #eceaea;
 
   display: flex;
-  justify-content: center;
-  gap: 8rem;
-  align-items: center;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* gap: 8rem; */
+  text-align: center;
   padding-block: 3rem;
   font-size: 1.2rem;
 }
 
-@media screen and (min-width: 756px) {
+@media (min-width: 756px) {
   .cards-list {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr;
+  }
+
+  footer {
+    flex-direction: column;
   }
 }
