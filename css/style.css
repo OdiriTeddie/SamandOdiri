@@ -1,0 +1,170 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1rem;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+#welcome-section {
+  height: 100vh;
+}
+
+#navbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background: #be3144;
+
+  padding-inline: 3rem;
+}
+
+#navbar ul {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  list-style: none;
+  justify-content: flex-end;
+}
+
+#navbar ul a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+  display: inline-block;
+  padding-block: 1.5rem;
+  padding-inline: 0.75rem;
+}
+
+#navbar ul a:hover {
+  background: rgb(78, 78, 134);
+}
+
+#welcome-section {
+  background: #2d2e31;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#welcome-section h1 {
+  font-size: 3rem;
+}
+
+#welcome-section p {
+  color: #be3144;
+  font-size: 1.75rem;
+}
+
+#projects {
+  background: #45567d;
+  padding-block: 5rem;
+}
+
+#projects h2 {
+  text-align: center;
+  padding-block: 2rem;
+  text-decoration: underline;
+  color: #fff;
+  font-size: 2.4rem;
+}
+
+.cards-list {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr;
+  max-width: 70rem;
+  width: 90%;
+  margin-inline: auto;
+}
+
+.project-tile-content {
+  background: #242e47;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.project-tile-content a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.project-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.project-btn button {
+  background: #242e47;
+  display: inline-block;
+  padding: 1em 2.5em;
+  border: none;
+  color: #fff;
+}
+
+.socials {
+  height: 80vh;
+  color: #fff;
+  background: #303841;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.social-title h2 {
+  font-size: 3rem;
+}
+
+.social-title p {
+  font-size: 1.1rem;
+}
+
+.socials ul {
+  display: flex;
+  margin-top: 2rem;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.socials ul a {
+  font-size: 1.8rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+footer {
+  border-top: 8px solid #be3144;
+  background: #303841;
+  color: #eceaea;
+
+  display: flex;
+  justify-content: center;
+  gap: 8rem;
+  align-items: center;
+  padding-block: 3rem;
+  font-size: 1.2rem;
+}
+
+@media screen and (min-width: 756px) {
+  .cards-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
